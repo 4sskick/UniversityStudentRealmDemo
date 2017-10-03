@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Realm Demo 2</string>
+    <string name="action_settings">Settings</string>
+    <string name="str_universities">Universities</string>
+    <string name="str_add_unversity">Add Unversity</string>
+    <string name="str_university_name">University Name</string>
+    <string name="str_add">Add</string>
+    <string name="title_activity_student">StudentActivity</string>
+    <string name="str_add_student">Add Student</string>
+    <string name="str_name">Name</string>
+    <string name="str_email">Email</string>
+    <string name="str_birthday">Birthday</string>
+    <string name="str_update_student">Update Student</string>
+    <string name="str_update">Update</string>
+</resources>
