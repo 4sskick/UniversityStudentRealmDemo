@@ -12,8 +12,11 @@ import android.support.v7.widget.helper.ItemTouchHelper;
 import android.view.View;
 import android.widget.Toast;
 
+import javax.inject.Inject;
+
 import butterknife.BindView;
 import butterknife.ButterKnife;
+import dagger.android.AndroidInjection;
 import io.realm.RealmList;
 import io.realm.RealmResults;
 import nightroomcreation.id.realmdemo2.R;
@@ -36,7 +39,8 @@ public class StudentActivity extends BaseActivity implements View.OnClickListene
     Toolbar toolbar;
 
     //view
-    private StudentPresenter presenter;
+    @Inject
+    /*private */StudentPresenter presenter;
     private StudentAdapter adapter;
 
     //variable
@@ -66,7 +70,8 @@ public class StudentActivity extends BaseActivity implements View.OnClickListene
 
         ButterKnife.bind(this);
 
-        presenter = new StudentPresenter(this);
+        /*presenter = new StudentPresenter(this);*/
+        AndroidInjection.inject(this);
 
         //catch the intent values from previous activity
         universityId = getIntent().getStringExtra(RepositoryTable.ID);

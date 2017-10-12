@@ -1,5 +1,7 @@
 package nightroomcreation.id.realmdemo2.view.university;
 
+import javax.inject.Inject;
+
 import io.realm.RealmResults;
 import nightroomcreation.id.realmdemo2.database.model.University;
 import nightroomcreation.id.realmdemo2.database.repository.university.IUniversityRepository;
@@ -22,6 +24,7 @@ public class UniversityPresenter implements IUniversityPresenter {
     private IUniversityRepository.OnDeleteUniversityCallback onDeleteUniversityCallback;
 
     //constructor
+    @Inject
     public UniversityPresenter(UniversityActivity view) {
         this.view = view;
         this.reposity = new UniversityRepository();

@@ -1,5 +1,7 @@
 package nightroomcreation.id.realmdemo2.view.student;
 
+import javax.inject.Inject;
+
 import io.realm.RealmList;
 import io.realm.RealmResults;
 import nightroomcreation.id.realmdemo2.database.model.Student;
@@ -34,6 +36,7 @@ public class StudentPresenter implements IStudentPresenter {
     private IUniversityRepository universityRepository;
 
     //constructor
+    @Inject
     public StudentPresenter(StudentActivity view) {
         this.view = view;
         studentRepository = new StudentRepository();

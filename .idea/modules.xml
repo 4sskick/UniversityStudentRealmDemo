@@ -4,6 +4,8 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/RealmDemo2.iml" filepath="$PROJECT_DIR$/RealmDemo2.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/libs/dagger-template/dagger-template.iml" filepath="$PROJECT_DIR$/libs/dagger-template/dagger-template.iml" />
+      <module fileurl="file://$PROJECT_DIR$/libs/libs.iml" filepath="$PROJECT_DIR$/libs/libs.iml" />
     </modules>
   </component>
 </project>

@@ -13,8 +13,11 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Toast;
 
+import javax.inject.Inject;
+
 import butterknife.BindView;
 import butterknife.ButterKnife;
+import dagger.android.AndroidInjection;
 import io.realm.RealmResults;
 import nightroomcreation.id.realmdemo2.R;
 import nightroomcreation.id.realmdemo2.database.model.University;
@@ -37,7 +40,8 @@ public class UniversityActivity extends BaseActivity implements View.OnClickList
 
     //view
     private UniversityAdapter adapter;
-    private IUniversityPresenter presenter;
+    @Inject
+    /*private */IUniversityPresenter presenter;
 
     //variable
     private RealmResults<University> universities;
@@ -49,7 +53,8 @@ public class UniversityActivity extends BaseActivity implements View.OnClickList
 
         ButterKnife.bind(this);
 
-        this.presenter = new UniversityPresenter(this);
+        /*this.presenter = new UniversityPresenter(this);*/
+        AndroidInjection.inject(this);
 
         initComponents();
     }
